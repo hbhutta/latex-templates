@@ -1,0 +1,84 @@
+\documentclass{article}[12pt]
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtools}
+\usepackage{mwe}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\usepackage{tikz}
+\usepackage{geometry}
+  \geometry{ % Adjustable
+   a4paper,
+   total={170mm,257mm},
+   left=20mm,
+   top=20mm,
+}
+
+% NEW COMMANDS
+\newcommand{\set}[1]{\{#1\}}
+
+% -------------------------------------
+\title{Mathematical Proof Homework}
+\author{Your name here}
+
+\begin{document}
+\maketitle
+
+\begin{proof}
+    \textbf{1.1 [X points]}
+    Proof preamble...
+    \begin{align}
+      \text{Write some equation here}
+    \end{align}
+\end{proof}
+
+
+\begin{proof}
+    \textbf{1.2 [X points]}
+    Proof preamble...
+    \begin{align}
+      \text{Write some equation here}
+    \end{align}
+\end{proof}
+
+
+
+...
+
+
+
+\begin{proof}
+    \textbf{2.1.7 [X points]}
+    Proof preamble...
+    \begin{enumerate}
+        \item Some part of the proof...
+        \item Another part...
+    \end{enumerate}
+    \begin{align}
+      \text{Write some equation here}
+    \end{align}
+\end{proof}
+
+\noindent\hrulefill
+
+\begin{proof}
+    \textbf{1.2 [Example proof]}
+    We want to see if there exists an $s \in \mathbb{Z}$ such that 
+    \begin{align}
+       5637^{17}s \equiv 1 \pmod{9} 
+    \end{align}
+    First we check if $5637^{17}$ is a multiple of $9$. We notice that $5637 = 5634 + 3 = 9(626) + 3$, which means that
+    \begin{align*}
+       5636^{17} & \equiv 3^{17}\\
+                 &\equiv (3^{6})^{2}3^{5}\\
+                 &\equiv 729^{2}3^{5}\\
+                 &\equiv 0\cdot3^{5}\\
+                 &\equiv 0 \pmod{9}
+    \end{align*}
+    Since $5637^{17}$ is the coefficient of $s$ in $(2)$, and this coefficient is a multiple of $9$, so no matter what integer $s$ is, there is no $s$ such that $5637^{17}s \equiv 1 \pmod{9}$, since $5637^{17}s \equiv 0 \pmod{9}$. 
+\end{proof}
+
+\noindent\hrulefill
+
+\end{document}
